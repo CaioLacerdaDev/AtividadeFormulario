@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario Completo</h1>
+    <form>
+        <fieldset>
+            <legend>Informaçoes Pessoas</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder ="Digite seu nome" required maxlength="100">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder ="Digite seu email" required maxlength="100">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder ="Digite sua senha" minlength="4" maxlength="8">
+
+            
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" placeholder ="Digite sua idade" required minlength="18" maxlength="100">
+
+            <label for="data-de-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-de-nascimento" name="data-de-nascimento" placeholder ="Digite sua data de nascimento" required>
+
+           <label for="website">Website:</label>
+            <input type="url" id="website" name="website" placeholder ="http://www.seusite.com">         
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <label>Genero:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino" required checked>
+            <label for="masculino">Masculino</label> 
+
+            <input type="radio" id="feminino" name="genero" value="feminino" required>
+            <label for="feminino">Feminino</label> 
+        </fieldset>
+        <fieldset>
+            <label>Interesses:</label>
+            <input type="checkbox" id="esportes" name="interesses" value="esportes">
+            <label for="esportes">Esportes</label> 
+
+            <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia">
+            <label for="tecnologia">Tecnologias</label> 
+
+            <input type="checkbox" id="moda" name="interesses" value="moda">
+            <label for="moda">Moda</label>
+
+            <label for="cidade">Cidades</label>
+            <select id="cidade" name="cidade" required>
+                <option value="sao-paulo">Sao Paulo</option>
+                <option value="Valinhos">Valinhos</option>
+                <option value="campinas">Campinas</option>
+                <option value="vinhedo">Vinhedo</option>
+            </select> 
+        </fieldset>
+
+    <fieldset>
+        <legend>Enviar Arquivo</legend>
+        <label for="foto">Foto de perfil:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+    </fieldset>
+
+    </form>
+</body>
+</html>
